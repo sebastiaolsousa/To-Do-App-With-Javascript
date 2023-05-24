@@ -38,11 +38,15 @@ header {
 }
 
 section > div#list-creation {
-    background-color: #00ced1;
-    border: 5px solid #00ced1;
+    background-color: #c5d8d8;
+    border: 5px solid #c5d8d8;
     border-radius: 10px;
     width: auto;
     margin: 10px 10px;
+}
+
+section > div#list-creation > h1 {
+    text-align: center;
 }
 
 section > div#list-creation >input#listname {
