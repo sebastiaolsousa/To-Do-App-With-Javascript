@@ -15,12 +15,16 @@
         </header>
         <section id="content">
             <div id="list-creation">
-                <input type="text" name="listname" id="listname" placeholder="Name your list...">
+                <input type="text" name="listname" id="listname" placeholder="Name your list..." maxlength="20">
                 <input type="button" value="Create List" onclick="createlist()">
-            </div>
-            <div id="to-do-list">
 
+                <div id="to-do-list">
+                    <input type="button" id="add-activity" value="+" onclick="addactivity()">
+                </div>
             </div>
+            <!--<div id="to-do-list">
+                
+            </div>-->
         </section>
         <div class="bcontainer">
             <p class="bclean" onclick="clean()">Clean</p> <p class="bprint" onclick="print()">Print</p>

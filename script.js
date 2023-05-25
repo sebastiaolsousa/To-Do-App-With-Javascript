@@ -1,18 +1,32 @@
 function createlist() {
     var listname = document.getElementById("listname").value;
   
-    // Transforma a variável em um elemento h1
-    var h1Element = document.createElement("h1");
-    var textNode = document.createTextNode(listname);
-    h1Element.appendChild(textNode);
+    var h1listname = document.createElement("h1");
+    var textlistname = document.createTextNode(listname);
+    h1listname.appendChild(textlistname);
   
-    // Obtém a div com o ID "list-creation"
-    var divElement = document.getElementById("list-creation");
-  
-    // Substitui o conteúdo da div pelo h1
-    divElement.innerHTML = "";
-    divElement.appendChild(h1Element);
+    var divlist = document.getElementById("list-creation");
+    var mainlist = document.querySelector("main");
+    divlist.innerHTML = "";
+    divlist.appendChild(h1listname);
+    divlist.classList.add("expanded")
+    mainlist.classList.add("expanded")
+    
+    
+
+    //var todoparagraph = document.createElement("input:checkbox")
   }
+
+function addactivity(){
+  var inputactivity = document.createElement("input")
+  inputactivity.type = "text"
+
+  var buttonactivity = document.createElement("button")
+  buttonactivity.textContent = "Create"
+  buttonactivity.addEventListener("click", function() {
+    addactivity();
+  })
+}
 
 function clean(){
     
