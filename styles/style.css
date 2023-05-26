@@ -61,40 +61,46 @@ section > div#list-creation > h1 {
     padding: 5px;
 }
 
-section > div#list-creation >input#listname {
+section > div#list-creation >input[type="text"] {
     width: 80%;
+}
+
+input[type="text"].expanded {
+    margin: 5px;
 }
 
 #list-creation.expanded {
     height: 365px;
     border: 0px;
     padding-top: 0px;
+    overflow: auto;
   }
 
-input[type=button]{
+section > div#list-creation >button{
     background-color: #49a09d;
     color: white;
     border: none;
-    padding: 2px;
+    padding: 3px;
     border-radius: 3px;
     cursor: pointer;
 }
 
-input[type=button]:hover{
+button.expanded {
+    width: 60px;
+}
+
+section > div#list-creation > button:hover{
     background-color: rgb(8, 146, 93);
     transition: background-color 1s;
 }
 
 #to-do-list {
-    padding: 5px;
     text-align: center;
-    display: none;
+    display: block;
 }
 
-#add-activity {
-    font-size: 1.5em;
-    font-weight: bold;
-    padding: 0px 7px;
+::-webkit-scrollbar{
+    width: 0px;
 }
 
 div.bcontainer {
@@ -104,6 +110,12 @@ div.bcontainer {
     font-weight: bold;
     font-size: 1.5em;
     text-align: center;
+}
+
+input[type="checkbox"]{
+    margin: 5px;
+    width: 15px;
+    height: 15px;
 }
 
 div.bcontainer > p.bclean {
